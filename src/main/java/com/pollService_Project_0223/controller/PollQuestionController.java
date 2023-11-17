@@ -5,6 +5,8 @@ import com.pollService_Project_0223.service.PollQuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/question")
 public class PollQuestionController {
@@ -34,6 +36,11 @@ public class PollQuestionController {
     @GetMapping
     public PollQuestion getQuestionById(@RequestParam int id){
         return pollQuestionService.getQuestionById(id);
+    }
+
+    @GetMapping(value = "/all-questions")
+    public List<PollQuestion> getAllQuestions(){
+        return pollQuestionService.getAllQuestions();
     }
 
 }

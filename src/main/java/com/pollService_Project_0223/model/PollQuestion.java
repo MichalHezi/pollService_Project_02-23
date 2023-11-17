@@ -7,18 +7,19 @@ public class PollQuestion {
 
     private Integer id;
     private String questionTitle;
-    private String firstAnswerOption;
-    private String secondAnswerOption;
-    private String thirdAnswerOption;
-    private String fourthAnswerOption;
+    private Choice firstAnswerOption;
+    private Choice secondAnswerOption;
+    private Choice thirdAnswerOption;
+    private Choice fourthAnswerOption;
 
-    public PollQuestion(Integer id, String questionTitle, String firstAnswer, String secondAnswer, String thirdAnswer, String fourthAnswer) {
+
+    public PollQuestion(Integer id, String questionTitle, Choice firstAnswerOption, Choice secondAnswerOption, Choice thirdAnswerOption, Choice fourthAnswerOption) {
         this.id = id;
         this.questionTitle = questionTitle;
-        this.firstAnswerOption = firstAnswer;
-        this.secondAnswerOption = secondAnswer;
-        this.thirdAnswerOption = thirdAnswer;
-        this.fourthAnswerOption = fourthAnswer;
+        this.firstAnswerOption = firstAnswerOption;
+        this.secondAnswerOption = secondAnswerOption;
+        this.thirdAnswerOption = thirdAnswerOption;
+        this.fourthAnswerOption = fourthAnswerOption;
     }
 
     public Integer getId() {
@@ -37,35 +38,35 @@ public class PollQuestion {
         this.questionTitle = questionTitle;
     }
 
-    public String getFirstAnswerOption() {
+    public Choice getFirstAnswerOption() {
         return firstAnswerOption;
     }
 
-    public void setFirstAnswerOption(String firstAnswerOption) {
+    public void setFirstAnswerOption(Choice firstAnswerOption) {
         this.firstAnswerOption = firstAnswerOption;
     }
 
-    public String getSecondAnswerOption() {
+    public Choice getSecondAnswerOption() {
         return secondAnswerOption;
     }
 
-    public void setSecondAnswerOption(String secondAnswerOption) {
+    public void setSecondAnswerOption(Choice secondAnswerOption) {
         this.secondAnswerOption = secondAnswerOption;
     }
 
-    public String getThirdAnswerOption() {
+    public Choice getThirdAnswerOption() {
         return thirdAnswerOption;
     }
 
-    public void setThirdAnswerOption(String thirdAnswerOption) {
+    public void setThirdAnswerOption(Choice thirdAnswerOption) {
         this.thirdAnswerOption = thirdAnswerOption;
     }
 
-    public String getFourthAnswerOption() {
+    public Choice getFourthAnswerOption() {
         return fourthAnswerOption;
     }
 
-    public void setFourthAnswerOption(String fourthAnswerOption) {
+    public void setFourthAnswerOption(Choice fourthAnswerOption) {
         this.fourthAnswerOption = fourthAnswerOption;
     }
 }
