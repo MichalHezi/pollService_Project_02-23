@@ -4,9 +4,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pollService_Project_0223.model.PollQuestion;
 import com.pollService_Project_0223.repository.PollQuestionRepositoryImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PollQuestionServiceImpl implements PollQuestionService {
 
     @Autowired

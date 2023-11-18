@@ -14,10 +14,10 @@ public class PollQuestionMapper implements RowMapper<PollQuestion> {
         return new PollQuestion(
                rs.getInt("id"),
                rs.getString("question_title"),
-               Choice.valueOf(rs.getString("first_answer_option")),
-               Choice.valueOf(rs.getString("second_answer_option")),
-               Choice.valueOf(rs.getString("third_answer_option")),
-               Choice.valueOf(rs.getString("fourth_answer_option"))
+               Choice.valueOf(rs.getString("A")),
+               Choice.valueOf(rs.getString("B")),
+               Choice.valueOf(rs.getString("C")),
+               Choice.valueOf(rs.getString("D"))
 
 
         );

@@ -7,5 +7,5 @@ public interface UserAnswerRepository {
     void createAnswer(UserAnswer userAnswer);
     void deleteAnswer(int id);
     void updateAnswerById(int id);
-
+    UserAnswer getAnswerById(int id);
 }

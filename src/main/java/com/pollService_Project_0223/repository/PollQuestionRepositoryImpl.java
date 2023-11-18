@@ -5,8 +5,11 @@ import com.pollService_Project_0223.repository.mapper.PollQuestionMapper;
 import com.pollService_Project_0223.utils.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
+@Repository
 
 public class PollQuestionRepositoryImpl implements PollQuestionRepository{
 
@@ -16,7 +19,7 @@ public class PollQuestionRepositoryImpl implements PollQuestionRepository{
     @Override
     public Integer createQuestion(PollQuestion pollQuestion) {
         String sql = "INSERT INTO " + Constants.QUESTIONS_TABLE_NAME + "(question_title,first_answer_option,second_answer_option,third_answer_option,fourth_answer_option) VALUES (?,?,?,?,?)";
-        return jdbcTemplate.update(sql,pollQuestion.getQuestionTitle(),pollQuestion.getFirstAnswerOption(),pollQuestion.getSecondAnswerOption(),pollQuestion.getThirdAnswerOption(),pollQuestion.getFourthAnswerOption());
+        return jdbcTemplate.update(sql,pollQuestion.getQuestionTitle(),pollQuestion.getA(),pollQuestion.getB(),pollQuestion.getC(),pollQuestion.getD());
     }
 
     @Override

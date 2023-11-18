@@ -7,19 +7,19 @@ public class PollQuestion {
 
     private Integer id;
     private String questionTitle;
-    private Choice firstAnswerOption;
-    private Choice secondAnswerOption;
-    private Choice thirdAnswerOption;
-    private Choice fourthAnswerOption;
+    private Choice A;
+    private Choice B;
+    private Choice C;
+    private Choice D;
 
 
     public PollQuestion(Integer id, String questionTitle, Choice firstAnswerOption, Choice secondAnswerOption, Choice thirdAnswerOption, Choice fourthAnswerOption) {
         this.id = id;
         this.questionTitle = questionTitle;
-        this.firstAnswerOption = firstAnswerOption;
-        this.secondAnswerOption = secondAnswerOption;
-        this.thirdAnswerOption = thirdAnswerOption;
-        this.fourthAnswerOption = fourthAnswerOption;
+        this.A = firstAnswerOption;
+        this.B = secondAnswerOption;
+        this.C = thirdAnswerOption;
+        this.D = fourthAnswerOption;
     }
 
     public Integer getId() {
@@ -38,35 +38,35 @@ public class PollQuestion {
         this.questionTitle = questionTitle;
     }
 
-    public Choice getFirstAnswerOption() {
-        return firstAnswerOption;
+    public Choice getA() {
+        return A;
     }
 
-    public void setFirstAnswerOption(Choice firstAnswerOption) {
-        this.firstAnswerOption = firstAnswerOption;
+    public void setA(Choice a) {
+        this.A = a;
     }
 
-    public Choice getSecondAnswerOption() {
-        return secondAnswerOption;
+    public Choice getB() {
+        return B;
     }
 
-    public void setSecondAnswerOption(Choice secondAnswerOption) {
-        this.secondAnswerOption = secondAnswerOption;
+    public void setB(Choice b) {
+        this.B = b;
     }
 
-    public Choice getThirdAnswerOption() {
-        return thirdAnswerOption;
+    public Choice getC() {
+        return C;
     }
 
-    public void setThirdAnswerOption(Choice thirdAnswerOption) {
-        this.thirdAnswerOption = thirdAnswerOption;
+    public void setC(Choice c) {
+        this.C = c;
     }
 
-    public Choice getFourthAnswerOption() {
-        return fourthAnswerOption;
+    public Choice getD() {
+        return D;
     }
 
-    public void setFourthAnswerOption(Choice fourthAnswerOption) {
-        this.fourthAnswerOption = fourthAnswerOption;
+    public void setD(Choice d) {
+        this.D = d;
     }
 }

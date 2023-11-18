@@ -26,7 +26,7 @@ public class PollQuestionController {
 
     @PutMapping(value = "/update/question")
     public String updateQuestion(@RequestBody PollQuestion pollQuestion) {
-        if (pollQuestion.getId() == 1 || pollQuestion.getQuestionTitle() == null || pollQuestion.getFirstAnswerOption() == null || pollQuestion.getSecondAnswerOption() == null || pollQuestion.getThirdAnswerOption() == null || pollQuestion.getFourthAnswerOption() == null) {
+        if (pollQuestion.getId() == 1 || pollQuestion.getQuestionTitle() == null || pollQuestion.getA() == null || pollQuestion.getB() == null || pollQuestion.getC() == null || pollQuestion.getD() == null) {
             return "Can't change stuff to null";
         }else{
             return pollQuestionService.updateQuestion(pollQuestion.getId(), pollQuestion.getQuestionTitle());

@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/second")
 public class SpringProjectCustomerController {
 
-    @GetMapping
-    String getStringFromSecondMicroService(){
+    @GetMapping(value = "/getAllAnswers")
+    String getAllAnswersUserByIde(){
         return null;
     }
 }

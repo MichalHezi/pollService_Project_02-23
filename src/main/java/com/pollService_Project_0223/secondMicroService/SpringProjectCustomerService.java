@@ -10,7 +10,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 )
 public interface SpringProjectCustomerService {
 
-    @GetMapping
-    void getQ
+    @GetMapping(value = "/all-answers-by-id")
+    String getAllAnswersUserById(int id);
+
+
+
+
 
 }
